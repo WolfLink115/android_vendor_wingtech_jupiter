@@ -1,0 +1,464 @@
+{
+  "itemConfig": [
+    {
+      "showName": "VersionInfo"
+    },
+    {
+      "showName": "Backlight",
+      "paramconfig": {
+        "brightness": [
+          1,
+          255
+        ]
+      }
+    },
+    {
+      "showName": "Backlight_bright"
+    },
+    {
+      "showName": "Backlight_half"
+    },
+    {
+      "showName": "Backlight_dark"
+    },
+    {
+      "showName": "Flashlight",
+      "paramconfig": {
+        "cameraId": 0,
+        "is_flash": false
+      }
+    },
+    {
+      "showName": "LCD",
+      "support_autoTest_autopass": false,
+      "paramconfig": {
+        "auto_switch": true,
+        "auto_switch_delay": 500,
+        "lcd_pic": [
+          "Color_W",
+          "Color_R",
+          "Color_G",
+          "Color_B"
+        ]
+      }
+    },
+    {
+      "showName": "LCD_R"
+    },
+    {
+      "showName": "LCD_G"
+    },
+    {
+      "showName": "LCD_B"
+    },
+    {
+      "showName": "LCD_W"
+    },
+    {
+      "showName": "LCD_BL"
+    },
+    {
+      "showName": "Wlan",
+      "support_background_test": true
+    },
+    {
+      "showName": "Bluetooth",
+      "support_background_test": true
+    },
+    {
+      "showName": "GPS",
+      "support_background_test": true
+    },
+    {
+      "showName": "Battery",
+      "support_background_test": true,
+      "paramconfig": {
+        "support_afc_charge": false,
+        "check_usb_is_unplug": false,
+        "support_typec_check": false,
+        "Voltage": {
+          "min": 2500,
+          "max": 4500
+        },
+        "temp": {
+          "min": -20,
+          "max": 800
+        },
+        "ChargerVoltage": {
+          "min": 0,
+          "max": 0
+        },
+        "ChargerCurrent": {
+          "min": -3000,
+          "max": 1500
+        },
+        "errorBatteryId": [
+          "NULL",
+          "Not found",
+          "Generic_Battery"
+        ]
+      }
+    },
+    {
+      "showName": "Accelerometer",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_axialresult": true,
+        "support_angle45": false,
+        "support_angleneg45": false,
+        "data_suffix_rate": 1000,
+        "gravity_45_degree_x": -4.9000,
+        "gravity_45_degree_y": 4.9000,
+        "gravity_45_degree_z": 6.9340,
+        "gravity_45_degree_tolerance": 0.71,
+        "gravity_axial_limit": 1.5,
+        "is_auto_calibrate": true
+      }
+    },
+    {
+      "showName": "Magnetic",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_draw": false,
+        "support_test": true,
+        "self_calibrate": false
+      }
+    },
+    {
+      "showName": "Optical",
+      "paramconfig": {
+        "is_check_range": false,
+        "value_change_in": 0
+      }
+    },
+    {
+      "showName": "Proximity"
+    },
+    {
+      "showName": "Gyroscope",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_test": false,
+        "is_auto_calibrate": true
+      }
+    },
+    {
+      "showName": "Sar",
+      "paramconfig": {
+        "check_exist_only": true
+      }
+    },
+    {
+      "showName": "MainMicToReceiver",
+      "action": "com.mmigroup.action.audioloop.MTKATALOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "loop_type": "manual_loop1",
+        "is_show_list": false,
+        "audioConfig": [
+          "mmitest=on;inputdevice=mainmic",
+          "mmitest=on;outputdevice=receiver"
+        ],
+        "freqLRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "freqRRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "amplLRange": {
+          "min": 0,
+          "max": 200
+        },
+        "amplRRange": {
+          "min": 0,
+          "max": 200
+        }
+      }
+    },
+    {
+      "showName": "SubMicToReceiver",
+      "action": "com.mmigroup.action.audioloop.MTKATALOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "loop_type": "manual_loop1",
+        "is_show_list": false,
+        "audioConfig": [
+          "mmitest=on;inputdevice=submic",
+          "mmitest=on;outputdevice=receiver"
+        ],
+        "freqLRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "freqRRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "amplLRange": {
+          "min": 0,
+          "max": 200
+        },
+        "amplRRange": {
+          "min": 0,
+          "max": 200
+        }
+      }
+    },
+    {
+      "showName": "MainCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 0,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "sdcard/fac_sources/Camera/",
+        "picture_name": "BackATA",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "MainCamera"
+      ]
+    },
+    {
+      "showName": "WideCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 5,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "sdcard/fac_sources/Camera/",
+        "picture_name": "BackATA3",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "WideCamera"
+      ]
+    },
+    {
+      "showName": "DepthCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 2,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "sdcard/fac_sources/Camera/",
+        "picture_name": "BackATA2",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "DepthCamera"
+      ]
+    },
+    {
+      "showName": "FrontCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 1,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "sdcard/fac_sources/Camera/",
+        "picture_name": "FrontATA",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "FrontCamera"
+      ]
+    },
+    {
+      "showName": "TpOpenShort"
+    },
+    {
+      "showName": "SdCard"
+    },
+    {
+      "showName": "FM",
+      "support_background_test": true
+    },
+    {
+      "showName": "MainSIMCard"
+    },
+    {
+      "showName": "KeyPad"
+    },
+    {
+      "showName": "fingerprint",
+      "paramconfig": {
+        "is_need_nextButton": false,
+        "support_enrolTest": false,
+        "support_identifyTest": false
+      }
+    },
+    {
+      "showName": "LightTEST"
+    },
+    {
+      "showName": "RTC"
+    },
+    {
+      "showName": "Receiver",
+      "action": "com.mmigroup.action.audioloop.MTKATALOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "loop_type": "manual_loop1",
+        "is_show_list": false,
+        "audioConfig": [
+          "mmitest=on;inputdevice=submic",
+          "mmitest=on;outputdevice=receiver"
+        ],
+        "freqLRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "freqRRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "amplLRange": {
+          "min": 0,
+          "max": 200
+        },
+        "amplRRange": {
+          "min": 0,
+          "max": 200
+        }
+      }
+    },
+    {
+      "showName": "Speaker",
+      "action": "com.mmigroup.action.audioloop.MTKATALOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "loop_type": "manual_loop1",
+        "is_show_list": false,
+        "audioConfig": [
+          "mmitest=on;inputdevice=mainmic",
+          "mmitest=on;outputdevice=speaker"
+        ],
+        "freqLRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "freqRRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "amplLRange": {
+          "min": 0,
+          "max": 200
+        },
+        "amplRRange": {
+          "min": 0,
+          "max": 200
+        }
+      }
+    },
+    {
+      "showName": "HeadSet",
+      "action": "com.mmigroup.action.HEADPHONE",
+      "support": true,
+      "paramconfig": {
+        "volume_rate": 0.5,
+        "keyCode": [
+          "HEADSETHOOK"
+        ]
+      }
+    },
+    {
+      "showName": "HsMicToHeadPhone",
+      "action": "com.mmigroup.action.audioloop.MTKATALOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "loop_type": "manual_loop1",
+        "is_show_list": false,
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;inputdevice=hsmic",
+          "mmitest=on;outputdevice=headphone"
+        ],
+        "freqLRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "freqRRange": {
+          "min": 1000,
+          "max": 7000
+        },
+        "amplLRange": {
+          "min": 0,
+          "max": 200
+        },
+        "amplRRange": {
+          "min": 0,
+          "max": 200
+        }
+      }
+    },
+    {
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": true,
+        "randomVibSupport": false,
+        "shortInterval": [
+          200,
+          200
+        ],
+        "longInterval": [
+          200,
+          1000
+        ],
+        "randomInterval": [
+          6,
+          400,
+          400
+        ]
+      }
+    },
+    {
+      "showName": "OTG"
+    }
+  ]
+}

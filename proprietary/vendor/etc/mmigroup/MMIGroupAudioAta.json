@@ -1,0 +1,66 @@
+{
+  "itemConfig": [
+    {
+      "showName": "Speaker",
+      "paramconfig": {
+        "is_show_list": false,
+        "isPlayOnce": true,
+        "music_file": "/vendor/etc/mmigroup/spk.wav",
+        "audioConfig": [
+          "mmitest=on;outputdevice=speaker_max"
+        ]
+      }
+    },
+    {
+      "showName": "Receiver",
+      "paramconfig": {
+        "is_show_list": false,
+        "isPlayOnce": true,
+        "music_file": "/vendor/etc/mmigroup/rec.wav",
+        "audioConfig": [
+          "mmitest=on;outputdevice=receiver"
+        ]
+      }
+    },
+    {
+      "showName": "MainMic",
+      "support": true,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "loop_type": "saveFile",
+        "hasHeadPhone": false,
+        "music_file": "data/vendor/fac_sources/FTM_AP/MainMic.wav",
+        "audioConfig": [
+          "mmitest=on;inputdevice=mainmic"
+        ],
+        "markedWords": "mainmictoFile"
+      }
+    },
+    {
+      "showName": "SubMic",
+      "support": true,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "loop_type": "saveFile",
+        "hasHeadPhone": false,
+        "music_file": "data/vendor/fac_sources/FTM_AP/SubMic.wav",
+        "audioConfig": [
+          "mmitest=on;inputdevice=submic"
+        ],
+        "markedWords": "submictoFile"
+      }
+    },
+    {
+      "showName": "HsMicToHeadPhone",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "paramconfig": {
+        "volume_rate": 1.0,
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;loopline=hsmic_headphone"
+        ]
+      }
+    }
+  ]
+}

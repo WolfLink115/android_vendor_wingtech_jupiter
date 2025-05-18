@@ -1,0 +1,162 @@
+{
+  "systemConfig": {
+    "isCheckFactoryTestMode": false
+  },
+  "itemConfig": [
+    {
+      "showName": "VersionInfo",
+      "paramconfig": {
+        "AddInfo": {
+	  "SecureBoot": "any",
+          "CPUID": "any",
+          "TP": "any",
+          "RPMB": "any",
+          "CameraInfo": "any",
+          "BuildNumber": "any",
+          "BaseBandVersion": "any",
+          "KernelVersion": "any",
+          "LCM": "any",
+          "verifiedbootstate": "green",
+          "System_Verity": "true"
+        }
+      }
+    },
+    {
+      "showName": "KeyPad"
+    },
+    {
+      "showName": "Backlight"
+    },
+    {
+      "showName": "LCD",
+      "paramconfig": {
+        "auto_switch": false
+      }
+    },
+    {
+      "showName": "TpOpenShort"
+    },
+    {
+      "showName": "TouchPanel"
+    },
+    {
+      "showName": "MainCamera"
+    },
+    {
+      "showName": "DepthCamera"
+    },
+    {
+      "showName": "WideCamera"
+    },
+    {
+      "showName": "DualBackCamera"
+    },
+    {
+      "showName": "FrontCamera"
+    },
+    {
+      "showName": "Flashlight"
+    },
+    {
+      "showName": "SMARTPA"
+    },
+    {
+      "showName": "Speaker"
+    },
+    {
+      "showName": "Receiver"
+    },
+    {
+      "showName": "HeadSet",
+      "paramconfig": {
+        "keyCode": [
+          "HEADSETHOOK"
+        ]
+      }
+    },
+    {
+      "showName": "HsMicToHeadPhone",
+      "paramconfig": {
+        "needHeadsetUnPlug": true
+      }
+    },
+    {
+      "showName": "MainMicToHeadPhone",
+      "paramconfig": {
+        "needHeadsetUnPlug": true
+      }
+    },
+    {
+      "showName": "SubMicToHeadPhone"
+    },
+    {
+      "showName": "MainMicToReceiver"
+    },
+    {
+      "showName": "FM"
+    },
+    {
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": false
+      }
+    },
+    {
+      "showName": "fingerprint"
+    },
+    {
+      "showName": "Accelerometer",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_axialresult": true,
+        "support_angle45": true,
+        "support_angleneg45": true,
+        "is_auto_calibrate": false
+      }
+    },
+    {
+      "showName": "Optical"
+    },
+    {
+      "showName": "Proximity"
+    },
+    {
+      "showName": "TopSar"
+    },
+    {
+      "showName": "BottomSar"
+    },
+    {
+      "showName": "Magnetic"
+    },
+    {
+      "showName": "Gyroscope",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_test": true,
+        "is_auto_calibrate": false
+      }
+    },
+    {
+      "showName": "Battery"
+    },
+    {
+      "showName": "SdCard"
+    },
+    {
+      "showName": "MainSIMCard"
+    },
+    {
+      "showName": "Wlan"
+    },
+    {
+      "showName": "Bluetooth"
+    },
+    {
+      "showName": "GPS"
+    },
+    {
+      "showName": "OTG"
+    }
+  ]
+}
